@@ -78,12 +78,9 @@
 				</div>
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
-						<li class="active">
-							<a href="index.html">Úvod</a>
-						</li>
-						<li>
-							<a id="menu-couple" href="#couple">Ženich a nevěsta</a>
-						</li>
+						<li class="active"><a href="index.html">Úvod</a></li>
+						<li><a id="menu-couple" href="#couple">Ženich a nevěsta</a></li>
+						<li><a id="menu-location" href="#location">Místo konání</a></li>
 					</ul>
 				</div>
 			</div>
@@ -141,15 +138,17 @@
 		</div>
 	</div>
 	<!-- MAP -->
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-				<h3>Místo konání</h3>
-				<p>Celá svatba včetně obřadu se koná na zámku Rozsochatec ve stejnojmenné obci. Tato vesnice se nachází nedaleko Havlíčkova Brodu.</p>
+	<div id="fh5co-location">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h3>Místo konání</h3>
+					<p>Celá svatba včetně obřadu se koná na zámku Rozsochatec ve stejnojmenné obci. Tato vesnice se nachází nedaleko Havlíčkova Brodu.</p>
+				</div>
 			</div>
 		</div>
+		<div id="map" class="fh5co-map"></div>
 	</div>
-	<div id="map" class="fh5co-map"></div>
 
 	<!-- <div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/img_bg_3.jpg);">
 		<div class="overlay"></div>
@@ -628,6 +627,12 @@
 	$("#menu-couple").click(function() {
 	    $('html, body').animate({
 	        scrollTop: $("#fh5co-couple").offset().top
+	    }, 700);
+	});
+
+	$("#menu-location").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $("#fh5co-location").offset().top
 	    }, 700);
 	});
 
