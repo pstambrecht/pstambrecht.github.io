@@ -87,6 +87,7 @@
                         <li><a id="menu-couple" href="#couple">Nevěsta & ženich</a></li>
                         <li><a id="menu-story" href="#story">Náš příběh</a></li>
                         <li><a id="menu-events" href="#events">Hlavní události</a></li>
+                        <li><a id="menu-witnesses" href="#witnesses">Svědkyně</a></li>
                         <li><a id="menu-location" href="#location">Místo konání</a></li>
                         <li><a id="menu-gallery" href="#gallery">Galerie</a></li>
                     </ul>
@@ -608,6 +609,12 @@
 	$("#menu-events").click(function() {
 	    $('html, body').animate({
 	        scrollTop: $("#fh5co-event").offset().top
+	    }, 700);
+	});
+
+	$("#menu-witnesses").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $("#fh5co-witnesses").offset().top
 	    }, 700);
 	});
 
