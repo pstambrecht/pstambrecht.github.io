@@ -88,6 +88,7 @@
                         <li><a id="menu-story" href="#story">Náš příběh</a></li>
                         <li><a id="menu-events" href="#events">Hlavní události</a></li>
                         <li><a id="menu-location" href="#location">Místo konání</a></li>
+                        <li><a id="menu-gallery" href="#gallery">Galerie</a></li>
                     </ul>
                 </div>
             </div>
@@ -311,7 +312,8 @@
             </div>
 
             <div class="row fh5co-heading">
-                <img src="images/program.png" style="width:60%; height: auto; display: block; margin: 0px auto;" class="animate-box"/>
+                <img src="images/program.png" style="width:60%; height: auto; display: block; margin: 0px auto;"
+                     class="animate-box"/>
             </div>
 
             <div class="row">
@@ -364,6 +366,112 @@
             </div>
         </div>
         <div id="map" class="fh5co-map animate-box"></div>
+    </div>
+
+    <!-- Gallery -->
+    <div id="fh5co-gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+                    <span>Naše Vzpomínky</span>
+                    <h2>Galerie</h2>
+                </div>
+            </div>
+            <div class="row row-bottom-padded-md">
+                <div class="col-md-12">
+                    <ul id="fh5co-gallery-list">
+
+                        <li class="one-third animate-box" data-animate-effect="fadeIn"
+                            style="background-image: url(gallery/gallery_img_0.jpg); ">
+                            <a onclick="showModalImage('gallery/gallery_img_0.jpg')">
+                                <div class="case-studies-summary">
+                                    <h2>Plesujeme</h2>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="one-third animate-box" data-animate-effect="fadeIn"
+                            style="background-image: url(gallery/gallery_img_1.jpg); ">
+                            <a onclick="showModalImage('gallery/gallery_img_1.jpg')">
+                                <div class="case-studies-summary">
+                                    <h2>Svatbujeme</h2>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="one-third animate-box" data-animate-effect="fadeIn"
+                            style="background-image: url(gallery/gallery_img_2.jpg); ">
+                            <a onclick="showModalImage('gallery/gallery_img_2.jpg')">
+                                <div class="case-studies-summary">
+                                    <h2>Blbneme</h2>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="one-third animate-box" data-animate-effect="fadeIn"
+                            style="background-image: url(gallery/gallery_img_3.jpg); ">
+                            <a onclick="showModalImage('gallery/gallery_img_3.jpg')">
+                                <div class="case-studies-summary">
+                                    <h2>Topíme se</h2>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="one-third animate-box" data-animate-effect="fadeIn"
+                            style="background-image: url(gallery/gallery_img_4.jpg); ">
+                            <a onclick="showModalImage('gallery/gallery_img_4.jpg')">
+                                <div class="case-studies-summary">
+                                    <h2>Lížeme</h2>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="one-third animate-box" data-animate-effect="fadeIn"
+                            style="background-image: url(gallery/gallery_img_5.jpg); ">
+                            <a onclick="showModalImage('gallery/gallery_img_5.jpg')">
+                                <div class="case-studies-summary">
+                                    <h2>Tancujeme</h2>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="one-third animate-box" data-animate-effect="fadeIn"
+                            style="background-image: url(gallery/gallery_img_6.jpg); ">
+                            <a onclick="showModalImage('gallery/gallery_img_6.jpg')">
+                                <div class="case-studies-summary">
+                                    <h2>Maškarníme</h2>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="one-third animate-box" data-animate-effect="fadeIn"
+                            style="background-image: url(gallery/gallery_img_7.jpg); ">
+                            <a onclick="showModalImage('gallery/gallery_img_7.jpg')">
+                                <div class="case-studies-summary">
+                                    <h2>Výletujeme</h2>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="one-third animate-box" data-animate-effect="fadeIn"
+                            style="background-image: url(gallery/gallery_img_8.jpg); ">
+                            <a onclick="showModalImage('gallery/gallery_img_8.jpg')">
+                                <div class="case-studies-summary">
+                                    <h2>Sjíždíme</h2>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="fh5co-gallery-preview" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="gallery-image-detail">
     </div>
 
     <footer id="fh5co-footer" role="contentinfo">
@@ -460,6 +568,35 @@
 	        scrollTop: $("#fh5co-location").offset().top
 	    }, 700);
 	});
+
+	$("#menu-gallery").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $("#fh5co-gallery").offset().top
+	    }, 700);
+	});
+
+</script>
+
+<!-- GALLERY JS -->
+<script>
+    // Get the modal
+var modal = document.getElementById('fh5co-gallery-preview');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var image_0 = document.getElementById('gallery-image-detail-0');
+var modalImg = document.getElementById("gallery-image-detail");
+
+function showModalImage(imageUrl){
+    modal.style.display = "block";
+    modalImg.src = imageUrl;
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
 
 </script>
 
