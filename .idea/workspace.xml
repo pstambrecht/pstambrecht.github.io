@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59c7cad2-b1bf-426a-ac88-c8cf0d1b4e70" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="59c7cad2-b1bf-426a-ac88-c8cf0d1b4e70" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,8 +19,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="527" column="52" lean-forward="false" selection-start-line="527" selection-start-column="52" selection-end-line="527" selection-end-column="52" />
+            <state relative-caret-position="482">
+              <caret line="522" column="63" lean-forward="true" selection-start-line="522" selection-start-column="63" selection-end-line="522" selection-end-column="63" />
               <folding>
                 <element signature="n#style#0;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1048,8 +1046,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="527" column="52" lean-forward="false" selection-start-line="527" selection-start-column="52" selection-end-line="527" selection-end-column="52" />
+        <state relative-caret-position="482">
+          <caret line="522" column="63" lean-forward="true" selection-start-line="522" selection-start-column="63" selection-end-line="522" selection-end-column="63" />
           <folding>
             <element signature="n#style#0;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
