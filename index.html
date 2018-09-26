@@ -601,14 +601,14 @@
 <script src="https://smtpjs.com/v2/smtp.js"></script>
 
 <script>
-    var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
-    d = new Date(2018,8,29,11,0,0);
+    var d = new Date(2018, 8, 29, 13, 0, 0, 0);
 
     // default example
     simplyCountdown('.simply-countdown-one', {
         year: d.getFullYear(),
         month: d.getMonth() + 1,
-        day: d.getDate()
+        day: d.getDate(),
+        hours: d.getHours()
     });
 
     //jQuery example
