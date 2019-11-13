@@ -79,7 +79,7 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Android apps", "Android TV apps", "Wear OS apps", "Android Things apps", "Google Assistant apps"],
+      strings: ["Android phone apps", "Android TV apps", "Wear OS apps", "Android Things apps", "Google Assistant apps"],
       typeSpeed: 50,
       loop: true,
     });
