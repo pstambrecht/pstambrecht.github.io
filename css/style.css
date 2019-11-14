@@ -240,7 +240,7 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #header {
-  /*background: url("../images/home-bg.jpg") repeat scroll center center / cover;*/
+  background: url("../images/cover.jpg") repeat scroll center center / cover;
   background-color: #000000;
   height: 100vh;
   width: 100%;
@@ -282,7 +282,11 @@ nav ul li a {
 
 .header-content .list-social li i {
   color: #fff;
-  font-size: 32px;
+  font-size: 60px;
+}
+
+.header-content h2 {
+  height: 100px;
 }
 
 /*-----------------------------------------------------------------------------------*/
